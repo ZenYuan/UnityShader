@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DIffuseVertexLevelMat
-  m_Shader: {fileID: 4800000, guid: 7e71b738d8ccaeb46833aef785bb0b23, type: 3}
+  m_Name: Material
+  m_Shader: {fileID: 4800000, guid: 159ecaeb1d35ae14a894ace4ad2156b5, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -62,7 +62,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 20
+    - _Gloss: 8
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -77,7 +77,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Diffuse: {r: 1, g: 1, b: 1, a: 1}
+    - _Diffuse: {r: 0.20754719, g: 0.09528895, b: 0.09528895, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Specular: {r: 1, g: 1, b: 1, a: 1}
+    - _Specular: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
+    - _diffuse: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

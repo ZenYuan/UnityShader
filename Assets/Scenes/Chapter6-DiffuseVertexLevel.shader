@@ -43,9 +43,11 @@ Shader "Unity shaders Book/Chapter 6/Diffuse Vertex-Level"
 				//法线从模型空间变化到世界空间，为逆转置矩阵
 				float3 worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
 				float3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
+				//lambert
 				float3 diffuse = _LightColor0.rgb * _Diffuse.rgb * saturate(dot(worldNormal, worldLightDir));
-
-				o.color = ambient + diffuse;
+				//half lambert
+				float3 hdiffuse = _LightColor0.rgb * _Diffuse.rgb * (0.5 * dot(worldNormal, worldLightDir) + 0.5);
+				o.color = ambient + hdiffuse;
 				return o;
 			}
 
